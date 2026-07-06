@@ -1,0 +1,67 @@
+{
+  "sections": [
+    {
+      "staffId": "katchan",
+      "items": [
+        { "id": "wish-001", "label": "1日目の食事は少なめにして2日目のご飯の幸福度を上げたい" },
+        { "id": "wish-002", "label": "GoPro撮影したい" }
+      ]
+    },
+    {
+      "staffId": "aochan",
+      "items": [
+        { "id": "wish-010", "label": "チネリ米したい" },
+        { "id": "wish-011", "label": "シークレットバディ" },
+        { "id": "wish-012", "label": "スタッフの卒業式（スタッフTシャツを脱ぐ）" },
+        { "id": "wish-013", "label": "スタッフ間の境目をなくす仕組み" },
+        { "id": "wish-014", "label": "筏を作りたい" },
+        { "id": "wish-015", "label": "ローション相撲したい" }
+      ]
+    },
+    {
+      "staffId": "mimo",
+      "items": [
+        { "id": "wish-020", "label": "夕陽はみんなで見に行きたい" },
+        { "id": "wish-021", "label": "写真撮りたい" },
+        { "id": "wish-022", "label": "貝殻・シーグラスアクセサリー" },
+        { "id": "wish-023", "label": "漂流物で遊びたい" },
+        { "id": "wish-024", "label": "海賊旗を作りたい" },
+        { "id": "wish-025", "label": "たこすみ" }
+      ]
+    },
+    {
+      "staffId": "kazu",
+      "items": [
+        { "id": "wish-030", "label": "ボディーペイントしたい" },
+        { "id": "wish-031", "label": "名刺ほしい" },
+        { "id": "wish-032", "label": "海の中で人間知恵の輪" },
+        { "id": "wish-033", "label": "音楽したい" },
+        { "id": "wish-034", "label": "星みんなで見たい" },
+        { "id": "wish-035", "label": "叫びたい" }
+      ]
+    },
+    {
+      "staffId": "meichan",
+      "items": [
+        { "id": "wish-040", "label": "プラバン（ピザの時に）" },
+        { "id": "wish-041", "label": "みんなでゴミ拾い（競争形式で楽しく）" }
+      ]
+    },
+    {
+      "staffId": "woody",
+      "items": [
+        { "id": "wish-050", "label": "ミッションカード（参加者同士が仲良くなれる仕組み）" },
+        { "id": "wish-051", "label": "バケットリスト作成" },
+        { "id": "wish-052", "label": "3日間で盛り上がった企画内容を次につなげるメモ" },
+        { "id": "wish-053", "label": "宝探し" }
+      ]
+    },
+    {
+      "staffId": "tsune",
+      "items": [
+        { "id": "wish-060", "label": "参加者に役割やきっかけを作りたい" },
+        { "id": "wish-061", "label": "名前を覚える仕組み" }
+      ]
+    }
+  ]
+}

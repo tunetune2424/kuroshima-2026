@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #1b6b6b;
+  --color-sand: #f5edd6;
+  --color-coral: #e8714a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-sand);
+  -webkit-tap-highlight-color: transparent;
+}
