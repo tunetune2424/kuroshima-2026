@@ -7,14 +7,15 @@
         { "id": "eq-001", "name": "参加者名簿", "quantity": "1", "notes": "" },
         { "id": "eq-002", "name": "備品リスト", "quantity": "1", "notes": "" },
         { "id": "eq-003", "name": "タイムテーブル", "quantity": "1", "notes": "" },
-        { "id": "eq-004", "name": "報告シート", "quantity": "1", "notes": "" },
-        { "id": "eq-005", "name": "緊急連絡先", "quantity": "1", "notes": "" },
-        { "id": "eq-006", "name": "応急処置参考資料", "quantity": "1", "notes": "" },
-        { "id": "eq-007", "name": "クリップボード", "quantity": "2", "notes": "" },
-        { "id": "eq-008", "name": "油性ペン（黒・太）", "quantity": "2", "notes": "" },
-        { "id": "eq-009", "name": "ボールペン", "quantity": "2", "notes": "" },
-        { "id": "eq-010", "name": "ガムテープ（養生）名札用", "quantity": "2", "notes": "" },
-        { "id": "eq-011", "name": "しおり", "quantity": "35", "notes": "" }
+        { "id": "eq-004", "name": "片付けチェックシート", "quantity": "1", "notes": "" },
+        { "id": "eq-005", "name": "備品ボックス中身シート", "quantity": "1", "notes": "リンクあり" },
+        { "id": "eq-006", "name": "緊急連絡先", "quantity": "1", "notes": "" },
+        { "id": "eq-007", "name": "応急処置参考資料", "quantity": "1", "notes": "" },
+        { "id": "eq-008", "name": "クリップボード", "quantity": "2", "notes": "" },
+        { "id": "eq-009", "name": "油性ペン（黒・太）", "quantity": "2", "notes": "名札用" },
+        { "id": "eq-010", "name": "ボールペン", "quantity": "2", "notes": "" },
+        { "id": "eq-011", "name": "ガムテープ（名札用）", "quantity": "2", "notes": "" },
+        { "id": "eq-012", "name": "パンフレット", "quantity": "40", "notes": "" }
       ]
     },
     {
@@ -23,9 +24,9 @@
       "items": [
         { "id": "eq-020", "name": "横断幕", "quantity": "1", "notes": "" },
         { "id": "eq-021", "name": "スピーカー", "quantity": "1", "notes": "フル充電" },
-        { "id": "eq-022", "name": "色紙", "quantity": "35（予備数枚）", "notes": "" },
-        { "id": "eq-023", "name": "配布用チラシ", "quantity": "35", "notes": "" },
-        { "id": "eq-024", "name": "ペン", "quantity": "35", "notes": "" }
+        { "id": "eq-022", "name": "色紙", "quantity": "40", "notes": "予備数枚含む" },
+        { "id": "eq-023", "name": "配布用チラシ", "quantity": "40", "notes": "" },
+        { "id": "eq-024", "name": "ペン", "quantity": "40", "notes": "在庫確認" }
       ]
     },
     {
@@ -33,91 +34,110 @@
       "label": "消耗品",
       "items": [
         { "id": "eq-030", "name": "アルミホイル", "quantity": "4", "notes": "" },
-        { "id": "eq-031", "name": "紙コップ", "quantity": "150以上", "notes": "" },
-        { "id": "eq-032", "name": "紙皿（深）", "quantity": "150以上", "notes": "" },
-        { "id": "eq-033", "name": "割り箸", "quantity": "150以上", "notes": "" },
-        { "id": "eq-034", "name": "ジップロック（M）", "quantity": "1箱（45枚入り）", "notes": "" },
-        { "id": "eq-035", "name": "洗剤", "quantity": "2", "notes": "" },
-        { "id": "eq-036", "name": "スポンジ", "quantity": "4", "notes": "" },
-        { "id": "eq-037", "name": "金たわし", "quantity": "4", "notes": "" },
-        { "id": "eq-038", "name": "着火剤", "quantity": "5", "notes": "" },
-        { "id": "eq-039", "name": "軍手", "quantity": "15組", "notes": "" },
-        { "id": "eq-040", "name": "ウェットティッシュ", "quantity": "1袋", "notes": "" },
-        { "id": "eq-041", "name": "ゴミ袋", "quantity": "75L袋×10枚入り×5つ", "notes": "多めに用意" },
-        { "id": "eq-042", "name": "黒いゴミ袋（小）", "quantity": "10枚入り", "notes": "" }
+        { "id": "eq-031", "name": "紙コップ", "quantity": "200", "notes": "" },
+        { "id": "eq-032", "name": "紙皿（深）", "quantity": "200", "notes": "" },
+        { "id": "eq-033", "name": "割り箸", "quantity": "200", "notes": "" },
+        { "id": "eq-034", "name": "アイラップ", "quantity": "50", "notes": "" },
+        { "id": "eq-035", "name": "ジップロック（M）", "quantity": "1箱（45枚入り）", "notes": "" },
+        { "id": "eq-036", "name": "洗剤", "quantity": "2", "notes": "" },
+        { "id": "eq-037", "name": "スポンジ", "quantity": "4", "notes": "" },
+        { "id": "eq-038", "name": "金たわし", "quantity": "4", "notes": "" },
+        { "id": "eq-039", "name": "着火剤", "quantity": "5", "notes": "" },
+        { "id": "eq-040", "name": "軍手", "quantity": "10組", "notes": "" },
+        { "id": "eq-041", "name": "ウェットティッシュ", "quantity": "1袋", "notes": "" },
+        { "id": "eq-042", "name": "ゴミ袋（75L）", "quantity": "10枚入り×5つ", "notes": "1島分" },
+        { "id": "eq-043", "name": "黒いゴミ袋（45L）", "quantity": "10枚入り", "notes": "" },
+        { "id": "eq-044", "name": "ガムテープ", "quantity": "2", "notes": "段ボールピザ窯用" }
+      ]
+    },
+    {
+      "id": "fire-tools",
+      "label": "薪・火起こし用品",
+      "items": [
+        { "id": "eq-050", "name": "火起こし用 ロープ", "quantity": "8", "notes": "" },
+        { "id": "eq-051", "name": "火起こし用 押さえ木", "quantity": "7", "notes": "" },
+        { "id": "eq-052", "name": "火起こし用 棒", "quantity": "10", "notes": "" },
+        { "id": "eq-053", "name": "火起こし用 板", "quantity": "7", "notes": "" },
+        { "id": "eq-054", "name": "火起こし用 麻紐", "quantity": "多め", "notes": "" },
+        { "id": "eq-055", "name": "ファイヤースターター", "quantity": "3", "notes": "" },
+        { "id": "eq-056", "name": "土嚢袋", "quantity": "20", "notes": "お酒等のボトル入れ用" },
+        { "id": "eq-057", "name": "モーラナイフ", "quantity": "6", "notes": "班の数分" },
+        { "id": "eq-058", "name": "革手袋", "quantity": "2", "notes": "" },
+        { "id": "eq-059", "name": "のこぎり・なた", "quantity": "2", "notes": "" },
+        { "id": "eq-060", "name": "チャッカマン", "quantity": "6", "notes": "班の数分" }
       ]
     },
     {
       "id": "tent-outdoor",
       "label": "テント・アウトドア用品",
       "items": [
-        { "id": "eq-050", "name": "5名用テント（泊まる用）", "quantity": "9", "notes": "終了時状態記録" },
-        { "id": "eq-051", "name": "備品用テント（5名用）", "quantity": "1", "notes": "" },
-        { "id": "eq-052", "name": "タープ", "quantity": "2", "notes": "" },
-        { "id": "eq-053", "name": "ブルーシート（大）", "quantity": "2", "notes": "" },
-        { "id": "eq-054", "name": "クーラーボックス", "quantity": "3", "notes": "" },
-        { "id": "eq-055", "name": "ランタン", "quantity": "10", "notes": "" },
-        { "id": "eq-056", "name": "電池（ランタン用）", "quantity": "適量", "notes": "" },
-        { "id": "eq-057", "name": "のこぎり・なた", "quantity": "2", "notes": "" },
-        { "id": "eq-058", "name": "モーラナイフ", "quantity": "5", "notes": "班の数分" },
-        { "id": "eq-059", "name": "金網", "quantity": "5", "notes": "" },
-        { "id": "eq-060", "name": "ライフジャケット", "quantity": "10", "notes": "" },
-        { "id": "eq-061", "name": "救命浮き輪", "quantity": "1", "notes": "" },
-        { "id": "eq-062", "name": "ポリタンク（生活用水用）", "quantity": "2", "notes": "水を入れていく・忘れがち！" },
-        { "id": "eq-063", "name": "ドライバッグ", "quantity": "2", "notes": "" },
-        { "id": "eq-064", "name": "ヘルメット", "quantity": "4", "notes": "飛び込み用は最低3個" },
-        { "id": "eq-065", "name": "ヘルメット用ロープ", "quantity": "2", "notes": "" },
-        { "id": "eq-066", "name": "寝袋", "quantity": "12", "notes": "10人＋予備" },
-        { "id": "eq-067", "name": "ガイロープ予備", "quantity": "複数", "notes": "" },
-        { "id": "eq-068", "name": "テント修理キット", "quantity": "1", "notes": "" },
-        { "id": "eq-069", "name": "予備ポール", "quantity": "1", "notes": "" },
-        { "id": "eq-070", "name": "土嚢袋", "quantity": "5", "notes": "バラバラのお酒等入れる" },
-        { "id": "eq-071", "name": "折りたたみ箱", "quantity": "1", "notes": "" },
-        { "id": "eq-072", "name": "ドラム缶", "quantity": "1", "notes": "" }
+        { "id": "eq-070", "name": "5名用テント（泊まる用）", "quantity": "10", "notes": "終了時状態記録。ペグ紛失時はテント修理BOXから補充" },
+        { "id": "eq-071", "name": "備品用テント（5名用）", "quantity": "1", "notes": "" },
+        { "id": "eq-072", "name": "テント修理キット", "quantity": "1", "notes": "" },
+        { "id": "eq-073", "name": "予備ポール", "quantity": "1", "notes": "" },
+        { "id": "eq-074", "name": "タープ", "quantity": "2", "notes": "" },
+        { "id": "eq-075", "name": "クーラーボックス", "quantity": "2", "notes": "" },
+        { "id": "eq-076", "name": "ブルーシート（大）", "quantity": "2", "notes": "" },
+        { "id": "eq-077", "name": "ドラム缶", "quantity": "1", "notes": "" },
+        { "id": "eq-078", "name": "ライフジャケット", "quantity": "12", "notes": "男鹿島で水洗い" },
+        { "id": "eq-079", "name": "ポリタンク（生活用水用）", "quantity": "2", "notes": "水を入れていく・忘れがち！" },
+        { "id": "eq-080", "name": "折りたたみ箱", "quantity": "1", "notes": "" },
+        { "id": "eq-081", "name": "メッシュバックパック", "quantity": "1", "notes": "ヘルメット・ロープ用" },
+        { "id": "eq-082", "name": "救命浮き輪", "quantity": "1", "notes": "" },
+        { "id": "eq-083", "name": "ヘルメット", "quantity": "2", "notes": "飛び込みは最低3個推奨のため要増強確認" },
+        { "id": "eq-084", "name": "ヘルメット用ロープ", "quantity": "1", "notes": "" },
+        { "id": "eq-085", "name": "モリ", "quantity": "12", "notes": "班2本＋予備" },
+        { "id": "eq-086", "name": "モリ用竿ケース", "quantity": "1", "notes": "" },
+        { "id": "eq-087", "name": "スコップ", "quantity": "1", "notes": "燃えカス片付け用" },
+        { "id": "eq-088", "name": "寝袋", "quantity": "21", "notes": "暫定数" }
       ]
     },
     {
-      "id": "firewood",
-      "label": "薪・木炭",
+      "id": "lantern",
+      "label": "ランタン",
       "items": [
-        { "id": "eq-080", "name": "木炭", "quantity": "3kg×4", "notes": "都度購入" },
-        { "id": "eq-081", "name": "薪", "quantity": "3束", "notes": "キャンプファイヤー用2束＋予備" },
-        { "id": "eq-082", "name": "火ばさみ", "quantity": "5", "notes": "" },
-        { "id": "eq-083", "name": "革手袋", "quantity": "2", "notes": "" },
-        { "id": "eq-084", "name": "スコップ", "quantity": "1", "notes": "燃えカス片付け用" }
+        { "id": "eq-090", "name": "ランタン", "quantity": "11", "notes": "" },
+        { "id": "eq-091", "name": "電池（ランタン用）", "quantity": "適量", "notes": "" }
+      ]
+    },
+    {
+      "id": "fuel",
+      "label": "燃料",
+      "items": [
+        { "id": "eq-095", "name": "木炭", "quantity": "18kg", "notes": "男鹿島倉庫15kg＋和歌山準備3kg" },
+        { "id": "eq-096", "name": "薪", "quantity": "5束", "notes": "キャンプファイヤー用2束＋予備" }
       ]
     },
     {
       "id": "cookware",
       "label": "調理器具",
       "items": [
-        { "id": "eq-090", "name": "お玉", "quantity": "5", "notes": "" },
-        { "id": "eq-091", "name": "缶きり", "quantity": "5", "notes": "" },
-        { "id": "eq-092", "name": "しゃもじ", "quantity": "2", "notes": "" },
-        { "id": "eq-093", "name": "フライパン", "quantity": "5", "notes": "" },
-        { "id": "eq-094", "name": "アルミ鍋", "quantity": "10（1日目5、2日目5）", "notes": "" },
-        { "id": "eq-095", "name": "両手鍋", "quantity": "4（米2、カレー2）", "notes": "" },
-        { "id": "eq-096", "name": "まな板", "quantity": "10（班の数×2）", "notes": "" },
-        { "id": "eq-097", "name": "包丁", "quantity": "10（班の数×2）", "notes": "" },
-        { "id": "eq-098", "name": "はさみ", "quantity": "4", "notes": "" },
-        { "id": "eq-099", "name": "チャッカマン", "quantity": "5", "notes": "" },
-        { "id": "eq-100", "name": "トング", "quantity": "5", "notes": "" }
+        { "id": "eq-100", "name": "お玉", "quantity": "6", "notes": "" },
+        { "id": "eq-101", "name": "缶きり", "quantity": "6", "notes": "班の数分" },
+        { "id": "eq-102", "name": "しゃもじ", "quantity": "6", "notes": "" },
+        { "id": "eq-103", "name": "フライパン", "quantity": "6", "notes": "" },
+        { "id": "eq-104", "name": "アルミ鍋", "quantity": "12", "notes": "" },
+        { "id": "eq-105", "name": "両手鍋", "quantity": "4", "notes": "米2、カレー2" },
+        { "id": "eq-106", "name": "まな板", "quantity": "12", "notes": "班の数×2" },
+        { "id": "eq-107", "name": "包丁", "quantity": "12", "notes": "班の数×2" },
+        { "id": "eq-108", "name": "はさみ", "quantity": "6", "notes": "" },
+        { "id": "eq-109", "name": "トング", "quantity": "6", "notes": "班の数分" },
+        { "id": "eq-110", "name": "火ばさみ", "quantity": "6", "notes": "" },
+        { "id": "eq-111", "name": "金網", "quantity": "6", "notes": "" }
       ]
     },
     {
-      "id": "fishing-fire",
-      "label": "釣具・火起こし",
+      "id": "fishing",
+      "label": "釣具",
       "items": [
-        { "id": "eq-110", "name": "釣り竿", "quantity": "18", "notes": "班の数＋予備、破損状況記録" },
-        { "id": "eq-111", "name": "釣り具（針・重り・糸）", "quantity": "適量", "notes": "泳ぎ釣り用も含め多めに" },
-        { "id": "eq-112", "name": "バケツ", "quantity": "10", "notes": "班の数×2" },
-        { "id": "eq-113", "name": "マイナスドライバー（貝おこし）", "quantity": "10", "notes": "" },
-        { "id": "eq-114", "name": "ロープ（太いもの）", "quantity": "多め", "notes": "テント補強等" },
-        { "id": "eq-115", "name": "火起こし用 押さえ木", "quantity": "5", "notes": "" },
-        { "id": "eq-116", "name": "火起こし用 棒", "quantity": "10", "notes": "" },
-        { "id": "eq-117", "name": "火起こし用 板", "quantity": "5", "notes": "" },
-        { "id": "eq-118", "name": "火起こし用 麻紐", "quantity": "多め", "notes": "" },
-        { "id": "eq-119", "name": "ファイヤースターター", "quantity": "3", "notes": "" }
+        { "id": "eq-120", "name": "釣り竿", "quantity": "21", "notes": "班の数＋予備、破損状況記録" },
+        { "id": "eq-121", "name": "釣り具（針・重り・糸）", "quantity": "適量", "notes": "複数種類" },
+        { "id": "eq-122", "name": "ぶらくり", "quantity": "10セット", "notes": "" },
+        { "id": "eq-123", "name": "バケツ", "quantity": "12", "notes": "班の数×2" },
+        { "id": "eq-124", "name": "マイナスドライバー（貝おこし）", "quantity": "12", "notes": "" },
+        { "id": "eq-125", "name": "ドライバッグ", "quantity": "3", "notes": "" },
+        { "id": "eq-126", "name": "モリ用ゴム", "quantity": "10", "notes": "" },
+        { "id": "eq-127", "name": "結束バンド", "quantity": "多め", "notes": "" }
       ]
     },
     {
@@ -140,8 +160,8 @@
         { "id": "eq-143", "name": "ケチャップ", "quantity": "1", "notes": "" },
         { "id": "eq-144", "name": "しょうが", "quantity": "1", "notes": "" },
         { "id": "eq-145", "name": "わさび", "quantity": "1", "notes": "" },
-        { "id": "eq-146", "name": "薄力粉", "quantity": "2", "notes": "口が閉まるタイプ" },
-        { "id": "eq-147", "name": "強力粉", "quantity": "1", "notes": "" },
+        { "id": "eq-146", "name": "薄力粉", "quantity": "1", "notes": "口が閉まるタイプ" },
+        { "id": "eq-147", "name": "強力粉", "quantity": "2", "notes": "" },
         { "id": "eq-148", "name": "イースト", "quantity": "1", "notes": "" }
       ]
     },
@@ -149,7 +169,7 @@
       "id": "first-aid",
       "label": "救急箱",
       "items": [
-        { "id": "eq-160", "name": "救急箱", "quantity": "2", "notes": "" },
+        { "id": "eq-160", "name": "救急箱", "quantity": "1", "notes": "" },
         { "id": "eq-161", "name": "伸縮バンテージ", "quantity": "1", "notes": "" },
         { "id": "eq-162", "name": "伸縮包帯", "quantity": "1", "notes": "" },
         { "id": "eq-163", "name": "スプリントロール", "quantity": "1", "notes": "" },
@@ -163,9 +183,18 @@
         { "id": "eq-171", "name": "冷却パック", "quantity": "3", "notes": "" },
         { "id": "eq-172", "name": "ピンセット", "quantity": "5", "notes": "使用後処分" },
         { "id": "eq-173", "name": "安全ピン", "quantity": "20個", "notes": "" },
-        { "id": "eq-174", "name": "消毒液（マキロン）", "quantity": "1", "notes": "" },
-        { "id": "eq-175", "name": "ブドウ糖（低血糖用）", "quantity": "10", "notes": "" },
-        { "id": "eq-176", "name": "カロナール", "quantity": "1", "notes": "" }
+        { "id": "eq-174", "name": "爪切り", "quantity": "1", "notes": "" },
+        { "id": "eq-175", "name": "はさみ", "quantity": "1", "notes": "" },
+        { "id": "eq-176", "name": "サージカルテープ", "quantity": "1", "notes": "" },
+        { "id": "eq-177", "name": "消毒液（マキロン）", "quantity": "1", "notes": "" },
+        { "id": "eq-178", "name": "傷口用除菌シート", "quantity": "20", "notes": "" },
+        { "id": "eq-179", "name": "絆創膏セット", "quantity": "適量", "notes": "" },
+        { "id": "eq-180", "name": "ブドウ糖（低血糖用）", "quantity": "10", "notes": "" },
+        { "id": "eq-181", "name": "オロナイン", "quantity": "1", "notes": "" },
+        { "id": "eq-182", "name": "ムヒアルファEX", "quantity": "1", "notes": "" },
+        { "id": "eq-183", "name": "カロナール", "quantity": "1", "notes": "" },
+        { "id": "eq-184", "name": "塩分チャージ", "quantity": "2", "notes": "" },
+        { "id": "eq-185", "name": "経口補水液", "quantity": "1", "notes": "" }
       ]
     }
   ]

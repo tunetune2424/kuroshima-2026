@@ -28,6 +28,20 @@ function buildFlatSchedule(days) {
   )
 }
 
+// 指定スタッフが担当に含まれる、now以降で最初のイベント行を返す（なければnull）。
+export function getNextAssignmentFor(days, staffId, now = getEffectiveNow()) {
+  if (!staffId) return null
+  const flat = buildFlatSchedule(days).filter((row) => row.datetime)
+  flat.sort((a, b) => a.datetime - b.datetime)
+  return (
+    flat.find(
+      (row) =>
+        row.datetime > now &&
+        row.assignments.some((assignment) => assignment.staffId === staffId),
+    ) ?? null
+  )
+}
+
 // 現在時刻から「現在のイベント」「次のイベント」を判定する。
 // 戻り値の状態: 'before'（開催前）/ 'during'（開催中）/ 'after'（全日程終了後）
 export function getCurrentEventStatus(days, now = getEffectiveNow()) {

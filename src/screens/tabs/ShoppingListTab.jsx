@@ -1,4 +1,5 @@
 import { EmptyState } from '../../components/EmptyState'
+import { CollapsibleSection } from '../../components/CollapsibleSection'
 import { useAsyncData } from '../../hooks/useAsyncData'
 import { useStoreMemo } from '../../hooks/useStoreMemo'
 import { getShoppingList } from '../../services/dataSource'
@@ -11,12 +12,11 @@ export function ShoppingListTab() {
   if (stores.length === 0) return <EmptyState message="買い出しリストは登録されていません" />
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3">
       {stores.map((store) => (
-        <div key={store.id} className="rounded-2xl bg-white p-4 shadow-sm">
-          <h3 className="font-bold text-teal">{store.name}</h3>
+        <CollapsibleSection key={store.id} title={store.name} badge={`${store.items.length}品目`}>
           {store.address && <p className="text-xs text-gray-500">{store.address}</p>}
-          <ul className="mt-2 space-y-1 text-sm text-gray-700">
+          <ul className="space-y-1 text-sm text-gray-700">
             {store.items.map((item) => (
               <li key={item.id} className="flex justify-between gap-2">
                 <span>{item.name}</span>
@@ -29,9 +29,9 @@ export function ShoppingListTab() {
             onChange={(event) => setMemo(store.id, event.target.value)}
             placeholder="メモ"
             rows={2}
-            className="mt-3 w-full rounded-lg border border-gray-200 px-2 py-1 text-sm"
+            className="w-full rounded-lg border border-gray-200 px-2 py-1 text-sm"
           />
-        </div>
+        </CollapsibleSection>
       ))}
     </div>
   )

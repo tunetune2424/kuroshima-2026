@@ -6,22 +6,25 @@
       "address": "〒672-8035 兵庫県姫路市飾磨区中島1200番地",
       "memo": "精算は現地で現金のみ。領収書必要。",
       "items": [
-        { "id": "shop-001", "name": "スポドリ 2L（ポカリ）", "quantity": "8本", "notes": "" },
-        { "id": "shop-002", "name": "飲み会用ソフドリ 2L", "quantity": "8本", "notes": "カルピス・オレンジ・リンゴ・コーラ等" },
+        { "id": "shop-001", "name": "スポドリ 2L（ポカリ）", "quantity": "10本", "notes": "" },
+        { "id": "shop-002", "name": "飲み会用ソフドリ 2L", "quantity": "8本", "notes": "各種フレーバー" },
         { "id": "shop-003", "name": "本麒麟", "quantity": "2ケース", "notes": "" },
         { "id": "shop-004", "name": "金麦", "quantity": "1ケース", "notes": "" },
         { "id": "shop-005", "name": "ほろよい白", "quantity": "1ケース", "notes": "" },
-        { "id": "shop-006", "name": "ほろよい桃", "quantity": "1ケース", "notes": "" },
+        { "id": "shop-006", "name": "ほろよい桃", "quantity": "2ケース", "notes": "" },
         { "id": "shop-007", "name": "氷結 レモン", "quantity": "1ケース", "notes": "" },
-        { "id": "shop-008", "name": "檸檬堂", "quantity": "2ケース", "notes": "" },
-        { "id": "shop-009", "name": "玉ねぎ", "quantity": "2袋（10〜12個）", "notes": "8〜9個になるよう購入" },
-        { "id": "shop-010", "name": "じゃがいも", "quantity": "2袋（10〜12個）", "notes": "" },
+        { "id": "shop-007b", "name": "ハイボール", "quantity": "1ケース", "notes": "" },
+        { "id": "shop-008", "name": "檸檬堂", "quantity": "2ケース", "notes": "定番レモン5%" },
+        { "id": "shop-009", "name": "玉ねぎ", "quantity": "2袋（5〜6個入り）", "notes": "8〜9個になるよう購入" },
+        { "id": "shop-010", "name": "じゃがいも", "quantity": "2袋（5〜6個入り）", "notes": "" },
         { "id": "shop-011", "name": "にんじん", "quantity": "1袋（2〜3本）", "notes": "" },
+        { "id": "shop-011b", "name": "ピーマン", "quantity": "1袋（5〜6個入り）", "notes": "" },
         { "id": "shop-012", "name": "ツナ缶", "quantity": "3缶", "notes": "" },
+        { "id": "shop-012b", "name": "ベーコン", "quantity": "4パック", "notes": "クーラーBOX" },
         { "id": "shop-013", "name": "チーズ", "quantity": "1袋", "notes": "クーラーBOX" },
-        { "id": "shop-014", "name": "漁獲量対決の景品", "quantity": "5点", "notes": "甘い缶詰等 / フルーツ缶・コーン缶・バジル等" },
+        { "id": "shop-014", "name": "漁獲量対決の景品", "quantity": "6点", "notes": "甘い缶詰等" },
         { "id": "shop-015", "name": "板氷", "quantity": "6枚", "notes": "クーラーBOX1つに3枚" },
-        { "id": "shop-016", "name": "水 2L", "quantity": "14箱", "notes": "" }
+        { "id": "shop-016", "name": "水 2L", "quantity": "14箱", "notes": "2本×35人×2.5日分" }
       ]
     },
     {

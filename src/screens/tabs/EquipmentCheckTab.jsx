@@ -1,5 +1,6 @@
 import { EmptyState } from '../../components/EmptyState'
 import { ChecklistItem } from '../../components/ChecklistItem'
+import { CollapsibleSection } from '../../components/CollapsibleSection'
 import { useAsyncData } from '../../hooks/useAsyncData'
 import { useEquipmentCheckState } from '../../hooks/useEquipmentCheckState'
 import { getEquipmentCheck } from '../../services/dataSource'
@@ -12,11 +13,16 @@ export function EquipmentCheckTab() {
   if (categories.length === 0) return <EmptyState message="備品カテゴリが登録されていません" />
 
   return (
-    <div className="space-y-4">
-      {categories.map((category) => (
-        <div key={category.id}>
-          <h3 className="mb-2 font-bold text-teal">{category.label}</h3>
-          <div className="space-y-2">
+    <div className="space-y-3">
+      {categories.map((category) => {
+        const checkedCount = category.items.filter((item) => state[item.id]?.checked).length
+
+        return (
+          <CollapsibleSection
+            key={category.id}
+            title={category.label}
+            badge={`${checkedCount}/${category.items.length}`}
+          >
             {category.items.map((item) => (
               <ChecklistItem
                 key={item.id}
@@ -29,9 +35,9 @@ export function EquipmentCheckTab() {
                 onMemoChange={(text) => setMemo(item.id, text)}
               />
             ))}
-          </div>
-        </div>
-      ))}
+          </CollapsibleSection>
+        )
+      })}
     </div>
   )
 }

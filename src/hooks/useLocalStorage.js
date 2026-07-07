@@ -1,6 +1,8 @@
-import { useState, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 const NAMESPACE = 'kuroshima2026'
+// 同じキーを使う複数コンポーネント間で状態を同期させるためのアプリ内イベント
+const SYNC_EVENT = 'kuroshima2026-storage'
 
 function readValue(key, initialValue) {
   try {
@@ -14,6 +16,17 @@ function readValue(key, initialValue) {
 export function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => readValue(key, initialValue))
 
+  useEffect(() => {
+    const handleSync = (event) => {
+      if (event.detail?.key === key) {
+        setValue(readValue(key, initialValue))
+      }
+    }
+    window.addEventListener(SYNC_EVENT, handleSync)
+    return () => window.removeEventListener(SYNC_EVENT, handleSync)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [key])
+
   const update = useCallback(
     (next) => {
       setValue((prev) => {
@@ -23,6 +36,9 @@ export function useLocalStorage(key, initialValue) {
         } catch {
           // ストレージ書き込み不可（プライベートブラウズ等）は静かに無視する
         }
+        queueMicrotask(() => {
+          window.dispatchEvent(new CustomEvent(SYNC_EVENT, { detail: { key } }))
+        })
         return resolved
       })
     },

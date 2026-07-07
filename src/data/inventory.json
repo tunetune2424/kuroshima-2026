@@ -4,26 +4,27 @@
       "id": "drinks",
       "label": "飲料・お酒",
       "items": [
-        { "id": "inv-001", "name": "2L水", "quantity": "175本", "status": "在庫あり", "notes": "姫路買い出しで14箱（96本）追加予定" },
-        { "id": "inv-002", "name": "スポドリ 2L", "quantity": "8本", "status": "在庫あり", "notes": "" },
+        { "id": "inv-001", "name": "2L水", "quantity": "175本", "status": "在庫あり", "notes": "姫路買い出しで14箱追加予定" },
+        { "id": "inv-002", "name": "スポドリ 2L", "quantity": "10本", "status": "在庫あり", "notes": "ポカリ" },
         { "id": "inv-003", "name": "ソフドリ 2L", "quantity": "8本", "status": "在庫あり", "notes": "" },
         { "id": "inv-004", "name": "本麒麟", "quantity": "2ケース", "status": "在庫あり", "notes": "" },
         { "id": "inv-005", "name": "金麦", "quantity": "1ケース", "status": "在庫あり", "notes": "" },
         { "id": "inv-006", "name": "ほろよい白", "quantity": "1ケース", "status": "在庫あり", "notes": "" },
         { "id": "inv-007", "name": "ほろよい桃", "quantity": "2ケース", "status": "在庫あり", "notes": "" },
         { "id": "inv-008", "name": "氷結 レモン", "quantity": "1ケース", "status": "在庫あり", "notes": "" },
-        { "id": "inv-009", "name": "檸檬堂", "quantity": "2ケース", "status": "在庫あり", "notes": "" }
+        { "id": "inv-008b", "name": "ハイボール", "quantity": "1ケース", "status": "在庫あり", "notes": "" },
+        { "id": "inv-009", "name": "檸檬堂", "quantity": "2ケース", "status": "在庫あり", "notes": "定番レモン5%" }
       ]
     },
     {
       "id": "tent-outdoor",
       "label": "テント・アウトドア用品",
       "items": [
-        { "id": "inv-010", "name": "5名用テント", "quantity": "9張", "status": "要点検", "notes": "チャック破損の前例あり。出発前に全数チェック" },
-        { "id": "inv-011", "name": "ライフジャケット", "quantity": "10", "status": "在庫あり", "notes": "" },
-        { "id": "inv-012", "name": "ヘルメット", "quantity": "4", "status": "在庫あり", "notes": "飛び込み用最低3個確保" },
-        { "id": "inv-013", "name": "寝袋", "quantity": "12", "status": "在庫あり", "notes": "10人＋予備2" },
-        { "id": "inv-014", "name": "ランタン", "quantity": "10", "status": "要点検", "notes": "電池残量確認" }
+        { "id": "inv-010", "name": "5名用テント", "quantity": "10張", "status": "要点検", "notes": "チャック破損の前例あり。出発前に全数チェック" },
+        { "id": "inv-011", "name": "ライフジャケット", "quantity": "12", "status": "在庫あり", "notes": "" },
+        { "id": "inv-012", "name": "ヘルメット", "quantity": "2", "status": "要確認", "notes": "飛び込み用は最低3個推奨のため要増強確認" },
+        { "id": "inv-013", "name": "寝袋", "quantity": "21", "status": "暫定", "notes": "数量は暫定" },
+        { "id": "inv-014", "name": "ランタン", "quantity": "11", "status": "要点検", "notes": "電池残量確認" }
       ]
     },
     {
@@ -32,7 +33,7 @@
       "items": [
         { "id": "inv-020", "name": "ゴミ袋（75L）", "quantity": "5つ（10枚入り）", "status": "在庫あり", "notes": "過去回で不足した反省あり、多めに確保" },
         { "id": "inv-021", "name": "着火剤", "quantity": "5", "status": "在庫あり", "notes": "" },
-        { "id": "inv-022", "name": "軍手", "quantity": "15組", "status": "在庫あり", "notes": "" }
+        { "id": "inv-022", "name": "軍手", "quantity": "10組", "status": "在庫あり", "notes": "" }
       ]
     }
   ]

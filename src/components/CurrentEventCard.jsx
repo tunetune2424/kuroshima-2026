@@ -1,13 +1,7 @@
 import { Link } from 'react-router-dom'
-import { StaffBadge } from './StaffBadge'
 import { formatCountdown } from '../utils/time'
 
-function assignmentLabel(assignment, staffById) {
-  const staff = staffById.get(assignment.staffId)
-  return { name: staff?.name ?? assignment.staffId, task: assignment.task }
-}
-
-export function CurrentEventCard({ status, current, next, staffById, now }) {
+export function CurrentEventCard({ status, current, next, staffById, now, myStaffId }) {
   if (status === 'before') {
     return (
       <div className="rounded-2xl bg-teal p-4 text-white shadow-sm">
@@ -39,13 +33,16 @@ export function CurrentEventCard({ status, current, next, staffById, now }) {
       {current.assignments.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-1">
           {current.assignments.map((assignment) => {
-            const label = assignmentLabel(assignment, staffById)
+            const name = staffById.get(assignment.staffId)?.name ?? assignment.staffId
+            const isMe = assignment.staffId === myStaffId
             return (
               <span
                 key={`${assignment.staffId}-${assignment.task}`}
-                className="rounded-full bg-white/15 px-2 py-1 text-xs"
+                className={`rounded-full px-2 py-1 text-xs ${
+                  isMe ? 'bg-coral font-bold text-white' : 'bg-white/15'
+                }`}
               >
-                {label.name}：{label.task}
+                {name}：{assignment.task}
               </span>
             )
           })}

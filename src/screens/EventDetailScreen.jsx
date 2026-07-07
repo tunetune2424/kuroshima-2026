@@ -4,10 +4,12 @@ import { AppShell } from '../components/layout/AppShell'
 import { StaffBadge } from '../components/StaffBadge'
 import { EmptyState } from '../components/EmptyState'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { useMyStaff } from '../hooks/useMyStaff'
 import { getTimetable, getStaff, getEventDetail } from '../services/dataSource'
 
 export function EventDetailScreen() {
   const { eventId } = useParams()
+  const { myStaffId } = useMyStaff()
   const days = useAsyncData(getTimetable, [])
   const staff = useAsyncData(getStaff, [])
   const detail = useAsyncData(() => getEventDetail(eventId), [eventId])
@@ -47,6 +49,7 @@ export function EventDetailScreen() {
                   key={`${assignment.staffId}-${assignment.task}`}
                   name={staffById.get(assignment.staffId)?.name ?? assignment.staffId}
                   task={assignment.task}
+                  isMe={assignment.staffId === myStaffId}
                 />
               ))}
             </div>

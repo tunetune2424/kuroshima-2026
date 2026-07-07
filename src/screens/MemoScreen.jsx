@@ -16,17 +16,17 @@ export function MemoScreen() {
 
   return (
     <AppShell title="メモ">
-      <form onSubmit={handleSubmit} className="mb-4 flex gap-2">
-        <input
-          type="text"
+      <form onSubmit={handleSubmit} className="mb-4 space-y-2">
+        <textarea
           value={text}
           onChange={(event) => setText(event.target.value)}
           placeholder="気づいたことをメモ"
-          className="flex-1 rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm"
+          rows={4}
+          className="w-full rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm"
         />
         <button
           type="submit"
-          className="rounded-xl bg-coral px-4 py-2 text-sm font-bold text-white"
+          className="w-full rounded-xl bg-coral px-4 py-2 text-sm font-bold text-white"
         >
           追加
         </button>

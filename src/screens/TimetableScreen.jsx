@@ -5,6 +5,7 @@ import { TimetableRow } from '../components/TimetableRow'
 import { EmptyState } from '../components/EmptyState'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { useNow } from '../hooks/useNow'
+import { useMyStaff } from '../hooks/useMyStaff'
 import { getTimetable, getStaff } from '../services/dataSource'
 import { getCurrentEventStatus } from '../services/eventTime'
 
@@ -12,6 +13,7 @@ export function TimetableScreen() {
   const days = useAsyncData(getTimetable, [])
   const staff = useAsyncData(getStaff, [])
   const now = useNow()
+  const { myStaffId } = useMyStaff()
   const [activeDay, setActiveDay] = useState('day1')
 
   const staffById = useMemo(() => new Map((staff ?? []).map((person) => [person.id, person])), [staff])
@@ -36,6 +38,7 @@ export function TimetableScreen() {
             row={row}
             staffById={staffById}
             isCurrent={currentEvent?.id === row.id}
+            myStaffId={myStaffId}
           />
         ))}
       </div>

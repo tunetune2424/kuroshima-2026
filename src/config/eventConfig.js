@@ -1,6 +1,6 @@
 // 開催日時アンカー：day1の1行目（買い出し開始 7:00）が起点。
-// 実際の開催日が決まったら、この1行だけ更新すればタイムテーブル全体の日時計算に反映される。
-export const EVENT_START_DATETIME = '2026-08-01T07:00:00+09:00'
+// 開催日：2026年7月18日(土)〜20日(月)
+export const EVENT_START_DATETIME = '2026-07-18T07:00:00+09:00'
 
 export const DAY_OFFSETS = {
   day1: 0,
