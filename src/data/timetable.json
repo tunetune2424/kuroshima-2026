@@ -5,172 +5,438 @@
       "label": "1日目",
       "date": null,
       "rows": [
-        { "id": "day1-0", "time": "7:00", "content": "買い出し開始", "important": false, "assignments": [], "note": null },
-        { "id": "day1-1", "time": "7:30", "content": "ラムー（姫路南店）", "important": false, "assignments": [], "note": null },
-        { "id": "day1-2", "time": "8:30", "content": "マルハ", "important": false, "assignments": [], "note": null },
+        {
+          "id": "day1-0",
+          "time": "7:00",
+          "content": "買い出し",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "買い出し"
+            },
+            {
+              "staffId": "tsune",
+              "task": "買い出し"
+            },
+            {
+              "staffId": "aochan",
+              "task": "買い出し"
+            }
+          ],
+          "note": null
+        },
+        {
+          "id": "day1-1",
+          "time": "7:30",
+          "content": "ラムー",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "ビスケット・ツナ缶"
+            },
+            {
+              "staffId": "tsune",
+              "task": "サツマイモ"
+            },
+            {
+              "staffId": "meichan",
+              "task": "マシュマロ"
+            },
+            {
+              "staffId": "katchan",
+              "task": "ポン酢"
+            }
+          ],
+          "note": "買い出ししたいもの後でノートにリスト作る！"
+        },
+        {
+          "id": "day1-2",
+          "time": "8:30",
+          "content": "マルハ",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
         {
           "id": "day1-3",
           "time": "9:00",
           "content": "姫路港待機",
           "important": false,
-          "assignments": [
-            { "staffId": "aochan", "task": "港待機・船挨拶" },
-            { "staffId": "katchan", "task": "港待機" }
-          ],
+          "assignments": [],
           "note": null
         },
         {
           "id": "day1-4",
-          "time": "9:30",
-          "content": "参加者集合（姫路駅南口）",
-          "important": true,
+          "time": "9:15",
+          "content": "姫路港待機",
+          "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "参加者交流" },
-            { "staffId": "mimo", "task": "参加者交流" },
-            { "staffId": "woody", "task": "遅刻者対応・寝袋代回収" },
-            { "staffId": "aochan", "task": "受付" },
-            { "staffId": "meichan", "task": "受付" }
+            {
+              "staffId": "tsune",
+              "task": "港待機/船挨拶"
+            },
+            {
+              "staffId": "katchan",
+              "task": "港待機"
+            }
           ],
           "note": null
         },
         {
           "id": "day1-5",
-          "time": "9:45-10:15",
-          "content": "タクシー移動（飾磨交通）",
+          "time": "9:00",
+          "content": "集合",
           "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "飾磨交通挨拶" },
-            { "staffId": "mimo", "task": "先導" }
-          ],
-          "note": null
+          "assignments": [],
+          "note": "姫路駅南口"
         },
         {
           "id": "day1-6",
-          "time": "10:30",
-          "content": "乗船・出港（輝観光）",
-          "important": false,
+          "time": "9:30",
+          "content": "参加者集合",
+          "important": true,
           "assignments": [
-            { "staffId": "kazu", "task": "船挨拶" },
-            { "staffId": "woody", "task": "人数確認" }
+            {
+              "staffId": "mimo",
+              "task": "参加者交流"
+            },
+            {
+              "staffId": "woody",
+              "task": "遅刻者対応・寝袋代回収"
+            },
+            {
+              "staffId": "meichan",
+              "task": "受付"
+            },
+            {
+              "staffId": "katchan",
+              "task": "受付"
+            }
           ],
-          "note": null
+          "note": "名前張るのとか工夫\n集合時の工夫\n◎シークレットバディくじ引き(バディのいいところを探す??)\n→めいめい\n※8台32人で手配しています。\n増員したらタクシー増やします。\n3人は必ずハイエースで来てください"
         },
         {
           "id": "day1-7",
+          "time": "9:45",
+          "content": "タクシー移動",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "飾磨交通挨拶"
+            },
+            {
+              "staffId": "mimo",
+              "task": "先導"
+            }
+          ],
+          "note": "ミッション出して話すきっかけを作っておく\n飾磨交通\n予約車か確認"
+        },
+        {
+          "id": "day1-8",
+          "time": "10:30",
+          "content": "乗船・出港",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "船挨拶"
+            },
+            {
+              "staffId": "woody",
+              "task": "人数確認"
+            }
+          ],
+          "note": "船の中の過ごし方工夫\n輝観光"
+        },
+        {
+          "id": "day1-9",
           "time": "11:00",
           "content": "男鹿島上陸",
           "important": true,
           "assignments": [
-            { "staffId": "kazu", "task": "運転・瀬渡し票・倉庫・輝観光対応" },
-            { "staffId": "mimo", "task": "参加者管理" },
-            { "staffId": "woody", "task": "倉庫へ" },
-            { "staffId": "tsune", "task": "倉庫へ" },
-            { "staffId": "aochan", "task": "参加者管理" },
-            { "staffId": "meichan", "task": "参加者管理" },
-            { "staffId": "katchan", "task": "参加者管理" }
+            {
+              "staffId": "kazu",
+              "task": "運転・瀬渡し票・倉庫へ・輝観光さんとのやりとり"
+            },
+            {
+              "staffId": "mimo",
+              "task": "参加者管理・アイスブレイク"
+            },
+            {
+              "staffId": "woody",
+              "task": "倉庫へ"
+            },
+            {
+              "staffId": "tsune",
+              "task": "倉庫へ"
+            },
+            {
+              "staffId": "aochan",
+              "task": "参加者管理・アイスブレイク"
+            },
+            {
+              "staffId": "meichan",
+              "task": "参加者管理・アイスブレイク"
+            },
+            {
+              "staffId": "katchan",
+              "task": "参加者管理・アイスブレイク"
+            }
           ],
-          "note": "★倉庫と車の鍵を忘れずに"
-        },
-        { "id": "day1-8", "time": "11:40", "content": "出港", "important": false, "assignments": [], "note": null },
-        {
-          "id": "day1-9",
-          "time": "12:15",
-          "content": "黒島上陸（バケツリレーで荷物）",
-          "important": false,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
-          "note": null
+          "note": "・名前覚えゲーム\n★倉庫と車の鍵\nここで無人島のしおり説明したい\nもの運びはバケツリレーで！協力！\nレクリエーション！！(30分くらい)→あおちゃん"
         },
         {
           "id": "day1-10",
-          "time": "12:30",
-          "content": "オリエン・昼食",
+          "time": "11:40",
+          "content": "出港",
           "important": false,
-          "assignments": [
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "水分補給" }
-          ],
+          "assignments": [],
           "note": null
         },
         {
           "id": "day1-11",
-          "time": "13:15",
-          "content": "テント設営",
+          "time": "12:15-12:30",
+          "content": "黒島上陸・荷物運搬",
           "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "サポート" },
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "備品テント・整理" },
-            { "staffId": "tsune", "task": "サポート" },
-            { "staffId": "aochan", "task": "サポート" },
-            { "staffId": "meichan", "task": "サポート" },
-            { "staffId": "katchan", "task": "サポート" }
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            }
           ],
-          "note": null
+          "note": "もの運びはバケツリレーで！協力！"
         },
         {
           "id": "day1-12",
-          "time": "14:30",
-          "content": "漁獲量対決（モリ/釣り）",
+          "time": "12:30-13:15",
+          "content": "オリエン・昼食",
           "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "危機管理" },
-            { "staffId": "mimo", "task": "危機管理" },
-            { "staffId": "woody", "task": "危機管理" },
-            { "staffId": "tsune", "task": "危機管理" },
-            { "staffId": "aochan", "task": "危機管理" },
-            { "staffId": "meichan", "task": "危機管理" },
-            { "staffId": "katchan", "task": "危機管理" }
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "水分補給"
+            }
           ],
-          "note": null
+          "note": "なにする\nみんなで円になってお昼食べる"
         },
         {
           "id": "day1-13",
-          "time": "17:30",
-          "content": "夕食作り（魚捌き・米・カレー）",
+          "time": "13:15-13:45",
+          "content": "テント設営",
           "important": false,
           "assignments": [
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "時間管理" },
-            { "staffId": "tsune", "task": "魚捌き講習" },
-            { "staffId": "katchan", "task": "魚捌き講習？" }
+            {
+              "staffId": "kazu",
+              "task": "サポート"
+            },
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "備品テント・整理"
+            },
+            {
+              "staffId": "tsune",
+              "task": "説明・みんなへの指示"
+            },
+            {
+              "staffId": "aochan",
+              "task": "サポート"
+            },
+            {
+              "staffId": "meichan",
+              "task": "サポート"
+            },
+            {
+              "staffId": "katchan",
+              "task": "サポート"
+            }
           ],
-          "note": null
+          "note": "なるべく早めに！テントの設営方法…みんなに注意事項、見本テントの建て方/片づけ方見せる\n→班で立ててみる　　ペグの数周知、養生テープ、ペンで記入\nスタッフキャンプのイメージ！/参加者に為になるテントの説明頼むよ、つね！\n建てたところから写真撮るのもいいね！\n10分説明＋みんなの設営20分\n※風が強い可能性があるのでその場合は外ロープなどしっかり貼ってください"
         },
         {
           "id": "day1-14",
-          "time": "19:00",
-          "content": "夕食（米＆カレー＆魚）",
+          "time": "13:50-16:00",
+          "content": "漁獲量対決（モリ/釣り）",
           "important": false,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
-          "note": null
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "mimo",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "woody",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "tsune",
+              "task": "説明・みんなへの指示"
+            },
+            {
+              "staffId": "aochan",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "meichan",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "katchan",
+              "task": "危機管理"
+            }
+          ],
+          "note": "安全第一で。漁業権の話→２班に分ける\n説明10分\n釣り60分⇔もりつき60分\n参加者が希望するならどちらか専任もあり！\nもりつき：かず（固定）＋２人\n釣り：つね（固定）＋３人\n貝とかも！！\n※潜っている場合は必ず誰かスタッフは危機管理する\n・人数がいるかの確認\n・沖にいかないよう注意\n・救命浮き輪の用意"
         },
         {
           "id": "day1-15",
-          "time": "22:00",
-          "content": "キャンプファイヤー・一人一言",
-          "important": true,
+          "time": "16:00-16:15",
+          "content": "漁獲量対決発表",
+          "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "薪を組む・備品確認" },
-            { "staffId": "mimo", "task": "薪を組む・進行" },
-            { "staffId": "woody", "task": "備品確認" },
-            { "staffId": "tsune", "task": "企画担当" },
-            { "staffId": "aochan", "task": "備品確認" },
-            { "staffId": "katchan", "task": "備品確認" }
+            {
+              "staffId": "tsune",
+              "task": "発表"
+            },
+            {
+              "staffId": "meichan",
+              "task": "発表"
+            },
+            {
+              "staffId": "katchan",
+              "task": "発表"
+            }
+          ],
+          "note": "景品渡し\nめいめい・かっちゃん・つね"
+        },
+        {
+          "id": "day1-16",
+          "time": "16:15-18:00",
+          "content": "火起こし",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "tsune",
+              "task": "説明・みんなへの指示・導入の盛り上げ"
+            }
+          ],
+          "note": "アサヒもをモケモケにするのだけ最初にヒントとして伝える\nドラマを大事にしたい"
+        },
+        {
+          "id": "day1-17",
+          "time": "18:00",
+          "content": "夕食作り",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            }
           ],
           "note": null
         },
         {
-          "id": "day1-16",
-          "time": "23:30",
-          "content": "就寝前・火の元確認",
+          "id": "day1-18",
+          "time": null,
+          "content": "いただきます",
+          "important": false,
+          "assignments": [],
+          "note": "参加者指名"
+        },
+        {
+          "id": "day1-19",
+          "time": "19:00",
+          "content": "夕食",
           "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "確認✓" },
-            { "staffId": "woody", "task": "確認✓" },
-            { "staffId": "aochan", "task": "確認✓" },
-            { "staffId": "katchan", "task": "確認✓" }
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "時間管理"
+            }
           ],
-          "note": "※就寝前は必ず火を消す。バケツに海水を入れて竈門周りを完全消化すること"
+          "note": "【夕食内容】\n採れたもののみ←ごはん出さない目で\nお酒出さない！"
+        },
+        {
+          "id": "day1-20",
+          "time": "19:15",
+          "content": "夕日見る🌇",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "day1-21",
+          "time": "20:30",
+          "content": "ごちそうさま",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "day1-22",
+          "time": null,
+          "content": "何かレクをする",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "担当"
+            },
+            {
+              "staffId": "woody",
+              "task": "担当"
+            },
+            {
+              "staffId": "tsune",
+              "task": "担当"
+            }
+          ],
+          "note": "全体が繋がれるような\nウッディ、ミモ、ツネ"
+        },
+        {
+          "id": "day1-23",
+          "time": "22:00",
+          "content": "一人一言",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "備品・火の元確認"
+            },
+            {
+              "staffId": "woody",
+              "task": "備品・火の元確認"
+            },
+            {
+              "staffId": "tsune",
+              "task": "企画担当"
+            },
+            {
+              "staffId": "aochan",
+              "task": "備品・火の元確認"
+            },
+            {
+              "staffId": "katchan",
+              "task": "備品・火の元確認"
+            }
+          ],
+          "note": "本日の感想共有班ごとに\nみもから締めの言葉\n※必ず最後は火を消してから就寝してください\n焚き火していたところは全部バケツに海水を入れて、竈門の中や周りを火種一つ残さず完全に消化する"
         }
       ]
     },
@@ -181,76 +447,269 @@
       "rows": [
         {
           "id": "day2-0",
-          "time": "7:30",
-          "content": "起床",
+          "time": "5:00",
+          "content": "日の出",
           "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "整頓" },
-            { "staffId": "mimo", "task": "整頓" },
-            { "staffId": "woody", "task": "整頓" },
-            { "staffId": "tsune", "task": "整頓" },
-            { "staffId": "aochan", "task": "整頓" },
-            { "staffId": "meichan", "task": "整頓" },
-            { "staffId": "katchan", "task": "整頓" }
-          ],
+          "assignments": [],
           "note": null
         },
         {
           "id": "day2-1",
-          "time": "8:00",
-          "content": "島探検（8時には出発！）",
-          "important": true,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
+          "time": "6:30",
+          "content": "朝食づくり",
+          "important": false,
+          "assignments": [],
           "note": null
         },
         {
           "id": "day2-2",
-          "time": "11:00",
-          "content": "飛び込み（説明・危険講習）",
-          "important": true,
-          "assignments": [{ "staffId": "mimo", "task": "中盤ポジション・危機管理・携帯持ち" }],
-          "note": "全員ヘルメット着用、ロープをつけたまま飛び込まない、ヘルメットはきつく固定すること！"
-        },
-        { "id": "day2-3", "time": "11:30", "content": "飛び込み練習・三点支持", "important": false, "assignments": [], "note": null },
-        { "id": "day2-4", "time": "15:00", "content": "ピザ作り", "important": false, "assignments": [], "note": null },
-        {
-          "id": "day2-5",
-          "time": "16:00まで",
-          "content": "火起こし",
-          "important": true,
-          "assignments": [{ "staffId": "aochan", "task": "ドラム缶風呂率先" }],
-          "note": null
-        },
-        { "id": "day2-6", "time": "17:00", "content": "ドラム缶風呂", "important": false, "assignments": [], "note": null },
-        {
-          "id": "day2-7",
-          "time": "18:00",
-          "content": "中村荘補給（補給内容写真撮って送る）",
+          "time": "7:00",
+          "content": "朝食",
           "important": false,
           "assignments": [
-            { "staffId": "mimo", "task": "補給受け取り" },
-            { "staffId": "tsune", "task": "補給受け取り" }
+            {
+              "staffId": "kazu",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "mimo",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "woody",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "tsune",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "aochan",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "meichan",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "katchan",
+              "task": "整理整頓"
+            }
           ],
           "note": null
         },
         {
-          "id": "day2-8",
-          "time": "20:00",
-          "content": "夕食作り",
+          "id": "day2-3",
+          "time": "7:30",
+          "content": "説明・危険講習",
           "important": false,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
-          "note": null
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "先頭・携帯"
+            },
+            {
+              "staffId": "mimo",
+              "task": "中盤・危機管理・携帯"
+            },
+            {
+              "staffId": "woody",
+              "task": "最後尾"
+            },
+            {
+              "staffId": "tsune",
+              "task": "前から２番目・危機管理"
+            },
+            {
+              "staffId": "aochan",
+              "task": "危機管理"
+            },
+            {
+              "staffId": "meichan",
+              "task": "危機管理・めいめい"
+            },
+            {
+              "staffId": "katchan",
+              "task": "後ろから２番目・危機管理"
+            }
+          ],
+          "note": "飛び込み練習・三点支持\n待機要員は相談してね\n距離感大事\n飛び込みに関して\n・全員ヘルメット着用　四つ用意します。\n・ヘルメットの着用の仕方説明\nーーー\n・ヘルメットを飛び込む前にしっかりと着用\n・スタッフが着用できているか確認\n・飛び込み\n・スタッフ1人海でライフジャケットと救命浮き輪を持って待機\n・飛び込んだ人に浮き輪を渡す\n・海でヘルメットを外す\n・飛び込んだ参加者は陸に\n・飛び込み地点にいるスタッフが海にロープを投げる\n・ヘルメットにロープをつける\n・ヘルメットを引き上げる\n・ヘルメットからロープを取る\n・飛び込み待機者が着用\n※絶対にロープをつけたまま飛び込まないでください\n※絶対にきつく固定する→ゆるいとメットが浮かび首が締め付けられてより危険！！\n・ヘルメット装着係2人\n・海中でヘルメット回収2人\n・ロープ投げ、ヘルメット回収1人\n・見守り係"
         },
-        { "id": "day2-9", "time": "21:30", "content": "夕食", "important": false, "assignments": [], "note": null },
         {
-          "id": "day2-10",
-          "time": "22:00",
-          "content": "キャンプファイヤー・一言もらう",
+          "id": "day2-4",
+          "time": "8:00",
+          "content": "島探検",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "meichan",
+              "task": "待機"
+            }
+          ],
+          "note": "残る人何する/火保つ？\n8時には出発する！！"
+        },
+        {
+          "id": "day2-5",
+          "time": "10:30",
+          "content": "説明・危険講習",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            }
+          ],
+          "note": "飛び込み練習・三点支持"
+        },
+        {
+          "id": "day2-6",
+          "time": "11:00",
+          "content": "ゴール",
           "important": true,
           "assignments": [],
           "note": null
         },
-        { "id": "day2-11", "time": "23:30", "content": "就寝前・備品・火の元確認", "important": false, "assignments": [], "note": null }
+        {
+          "id": "day2-7",
+          "time": "11:00",
+          "content": "ピザ作り(自由時間)/ドラム缶？",
+          "important": false,
+          "assignments": [],
+          "note": "導入(みも)→担当に振る\nピザ生地:(みも)、うっでぃ\n段ボール窯：つね、かず\n炭担当:あおちゃん、かっちゃん(チャッカマンでおけ)\n下準備(野菜カット):めいめい\nプラバン（めいちゃん）\nピザの具を景品に渡す\n・ケチャップ（参加賞：共通であげる）→備品枠\n・たまねぎ（参加賞：共通であげる）→備品枠\n①チーズ\n②シーチキン\n③フルーツミックスの缶\n④コーン缶\n⑤バジル"
+        },
+        {
+          "id": "day2-8",
+          "time": "13:00",
+          "content": "自由時間",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "tsune",
+              "task": "ドラム缶風呂率先"
+            }
+          ],
+          "note": "火起こし・魚釣り・シーグラス・参加者のやりたい事"
+        },
+        {
+          "id": "day2-9",
+          "time": null,
+          "content": "ドラム缶風呂",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "day2-10",
+          "time": "16:00まで",
+          "content": "中村荘補給",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "補給受け取り"
+            },
+            {
+              "staffId": "woody",
+              "task": "補給受け取り"
+            }
+          ],
+          "note": "補給内容写真撮って送ってね"
+        },
+        {
+          "id": "day2-11",
+          "time": "17:00",
+          "content": "夕食作り",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "woody",
+              "task": "魚捌き講習？"
+            },
+            {
+              "staffId": "tsune",
+              "task": "魚捌き講習"
+            }
+          ],
+          "note": "鍋で米炊き：かっちゃん、あおちゃん\n魚裁き：つね、めいちゃん\nカレー：かず、うっでぃ\n魚捌き\n米炊く\nカレー作る"
+        },
+        {
+          "id": "day2-12",
+          "time": "18:00",
+          "content": "夕食",
+          "important": false,
+          "assignments": [],
+          "note": "米&カレー&魚&お酒たくさん"
+        },
+        {
+          "id": "day2-13",
+          "time": "20:00",
+          "content": "キャンプファイヤー",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "薪を組む"
+            },
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "サポート"
+            },
+            {
+              "staffId": "tsune",
+              "task": "薪を組む"
+            },
+            {
+              "staffId": "aochan",
+              "task": "サポート"
+            },
+            {
+              "staffId": "meichan",
+              "task": "サポート"
+            },
+            {
+              "staffId": "katchan",
+              "task": "サポート"
+            }
+          ],
+          "note": "めい、かず"
+        },
+        {
+          "id": "day2-14",
+          "time": "21:30",
+          "content": "一言もらう",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "day2-15",
+          "time": null,
+          "content": "就寝",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "備品・火の元確認"
+            },
+            {
+              "staffId": "tsune",
+              "task": "備品・火の元確認"
+            },
+            {
+              "staffId": "meichan",
+              "task": "備品・火の元確認"
+            }
+          ],
+          "note": "※必ず最後は火を消してから就寝してください\n焚き火していたところは全部バケツに海水を入れて、竈門の中や周りを火種一つ残さず完全に消化する"
+        }
       ]
     },
     {
@@ -261,157 +720,358 @@
         {
           "id": "departure-0",
           "time": "7:00",
-          "content": "起床・整理整頓",
+          "content": "起床",
           "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "整頓" },
-            { "staffId": "mimo", "task": "整頓" },
-            { "staffId": "woody", "task": "整頓" },
-            { "staffId": "tsune", "task": "整頓" },
-            { "staffId": "aochan", "task": "整頓" },
-            { "staffId": "meichan", "task": "整頓" },
-            { "staffId": "katchan", "task": "整頓" }
+            {
+              "staffId": "kazu",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "mimo",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "woody",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "tsune",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "aochan",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "meichan",
+              "task": "整理整頓"
+            },
+            {
+              "staffId": "katchan",
+              "task": "整理整頓"
+            }
           ],
           "note": null
         },
         {
           "id": "departure-1",
-          "time": "7:30",
-          "content": "朝ごはん（あまりもの）",
-          "important": false,
+          "time": null,
+          "content": "朝ごはん",
+          "important": true,
           "assignments": [
-            { "staffId": "kazu", "task": "備品確認" },
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "備品確認" }
+            {
+              "staffId": "kazu",
+              "task": "備品確認"
+            },
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "備品確認"
+            }
           ],
-          "note": "エネルギー補給のため米食べさせたい"
+          "note": "あまりもの"
         },
         {
           "id": "departure-2",
-          "time": "8:30",
-          "content": "フリータイム",
+          "time": null,
+          "content": "テント片付け",
           "important": false,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
+          "assignments": [
+            {
+              "staffId": "tsune",
+              "task": "説明"
+            }
+          ],
           "note": null
         },
         {
           "id": "departure-3",
-          "time": "9:00",
-          "content": "ビーチクリーン",
+          "time": null,
+          "content": "フリータイム",
           "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "備品確認" },
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "備品確認" }
-          ],
+          "assignments": [],
           "note": null
         },
         {
           "id": "departure-4",
-          "time": "9:30",
-          "content": "片付け・記念撮影",
-          "important": true,
+          "time": null,
+          "content": "ビーチクリーン",
+          "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "備品確認" },
-            { "staffId": "mimo", "task": "進行" },
-            { "staffId": "woody", "task": "備品確認" }
+            {
+              "staffId": "kazu",
+              "task": "備品確認"
+            },
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "備品確認"
+            }
           ],
-          "note": "最後の写真たくさん撮ろう！"
+          "note": "ゲーム形式にしたい→スタキャンよりパワーアップ\nかっちゃん、めいめい"
         },
         {
           "id": "departure-5",
-          "time": "10:30",
-          "content": "乗船（輝観光）",
+          "time": "10:00",
+          "content": "片付け・記念撮影",
           "important": false,
-          "assignments": [{ "staffId": "tsune", "task": "人数確認" }],
-          "note": null
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "備品確認"
+            },
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            },
+            {
+              "staffId": "woody",
+              "task": "備品確認"
+            }
+          ],
+          "note": "最後の写真撮影！たくさん撮ろう！"
         },
         {
           "id": "departure-6",
-          "time": "11:00",
-          "content": "男鹿島到着",
+          "time": null,
+          "content": "スタンバイ完了",
           "important": false,
           "assignments": [],
-          "note": "★色紙・ペンを忘れずに"
+          "note": null
         },
         {
           "id": "departure-7",
-          "time": "11:30",
-          "content": "倉庫・ゴミ",
+          "time": "10:40",
+          "content": "迎え",
           "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "備品洗浄" },
-            { "staffId": "woody", "task": "集計・倉庫" },
-            { "staffId": "tsune", "task": "ゴミ" },
-            { "staffId": "aochan", "task": "倉庫" }
-          ],
-          "note": "★倉庫と車の鍵を忘れずに"
+          "assignments": [],
+          "note": null
         },
         {
           "id": "departure-8",
-          "time": "12:00",
-          "content": "お風呂",
-          "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "備品洗浄" },
-            { "staffId": "mimo", "task": "備品洗浄" },
-            { "staffId": "woody", "task": "倉庫" },
-            { "staffId": "tsune", "task": "ゴミ燃やす（チャッカマン・着火剤忘れない！）" },
-            { "staffId": "aochan", "task": "倉庫" },
-            { "staffId": "meichan", "task": "お風呂案内" },
-            { "staffId": "katchan", "task": "お風呂案内" }
-          ],
-          "note": "食事の前に終わらせる"
+          "time": "11:00",
+          "content": "乗船",
+          "important": true,
+          "assignments": [],
+          "note": "輝観光"
         },
-        { "id": "departure-9", "time": "13:00", "content": "昼食", "important": false, "assignments": [], "note": null },
+        {
+          "id": "departure-9",
+          "time": "11:20",
+          "content": "男鹿島到着",
+          "important": false,
+          "assignments": [],
+          "note": "荷物全部下ろすか確認\n★色紙・ペン"
+        },
         {
           "id": "departure-10",
-          "time": "14:00",
-          "content": "乗船・出港",
-          "important": false,
-          "assignments": [{ "staffId": "tsune", "task": "人数確認" }],
-          "note": null
+          "time": null,
+          "content": "倉庫・ゴミ",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "備品洗浄"
+            },
+            {
+              "staffId": "woody",
+              "task": "集計・倉庫"
+            },
+            {
+              "staffId": "tsune",
+              "task": "ゴミ"
+            },
+            {
+              "staffId": "aochan",
+              "task": "倉庫"
+            }
+          ],
+          "note": "★倉庫と車の鍵"
         },
         {
           "id": "departure-11",
-          "time": "14:30",
-          "content": "タクシー移動（姫路港→姫路駅）",
+          "time": null,
+          "content": "お風呂促す",
           "important": false,
           "assignments": [
-            { "staffId": "kazu", "task": "タクシー" },
-            { "staffId": "mimo", "task": "タクシー" },
-            { "staffId": "woody", "task": "タクシー" },
-            { "staffId": "tsune", "task": "ハイエース荷積" },
-            { "staffId": "aochan", "task": "タクシー" },
-            { "staffId": "meichan", "task": "ハイエース荷積" },
-            { "staffId": "katchan", "task": "タクシー" }
+            {
+              "staffId": "kazu",
+              "task": "備品洗浄"
+            },
+            {
+              "staffId": "mimo",
+              "task": "備品洗浄"
+            },
+            {
+              "staffId": "woody",
+              "task": "倉庫"
+            },
+            {
+              "staffId": "tsune",
+              "task": "ゴミ燃やす・チャッカマン・着火剤忘れない！"
+            },
+            {
+              "staffId": "aochan",
+              "task": "倉庫"
+            },
+            {
+              "staffId": "meichan",
+              "task": "お風呂案内"
+            },
+            {
+              "staffId": "katchan",
+              "task": "お風呂案内"
+            }
           ],
-          "note": "予約車か確認"
+          "note": null
         },
         {
           "id": "departure-12",
-          "time": "15:00",
-          "content": "姫路駅着",
+          "time": null,
+          "content": "お風呂",
           "important": false,
-          "assignments": [
-            { "staffId": "kazu", "task": "参加者管理" },
-            { "staffId": "mimo", "task": "参加者管理" },
-            { "staffId": "woody", "task": "ハイエースで駅へ" },
-            { "staffId": "aochan", "task": "参加者管理" },
-            { "staffId": "meichan", "task": "ハイエースで駅へ" },
-            { "staffId": "katchan", "task": "参加者管理" }
-          ],
-          "note": null
+          "assignments": [],
+          "note": "※食事の前に終わらせる"
         },
         {
           "id": "departure-13",
-          "time": "15:30",
-          "content": "解散式・解散",
-          "important": true,
-          "assignments": [{ "staffId": "mimo", "task": "進行" }],
+          "time": "13:00",
+          "content": "昼食",
+          "important": false,
+          "assignments": [],
           "note": null
         },
-        { "id": "departure-14", "time": "18:00", "content": "打ち上げ飲み会", "important": false, "assignments": [], "note": null }
+        {
+          "id": "departure-14",
+          "time": null,
+          "content": "フリータイム",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "departure-15",
+          "time": "15:25",
+          "content": "船お迎え",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "departure-16",
+          "time": "15:45",
+          "content": "乗船・出港",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "woody",
+              "task": "人数確認"
+            }
+          ],
+          "note": "輝観光"
+        },
+        {
+          "id": "departure-17",
+          "time": "16:15",
+          "content": "姫路港着",
+          "important": false,
+          "assignments": [],
+          "note": null
+        },
+        {
+          "id": "departure-18",
+          "time": "16:30",
+          "content": "タクシー移動",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "タクシー"
+            },
+            {
+              "staffId": "mimo",
+              "task": "タクシー"
+            },
+            {
+              "staffId": "woody",
+              "task": "タクシー"
+            },
+            {
+              "staffId": "tsune",
+              "task": "ハイエース荷積"
+            },
+            {
+              "staffId": "aochan",
+              "task": "タクシー"
+            },
+            {
+              "staffId": "meichan",
+              "task": "ハイエース荷積"
+            },
+            {
+              "staffId": "katchan",
+              "task": "タクシー"
+            }
+          ],
+          "note": "予約車か確認\n※7台28人で手配しています。\n増員したらタクシー増やします。\n3人は必ずハイエースで来てください"
+        },
+        {
+          "id": "departure-19",
+          "time": "17:00",
+          "content": "姫路駅着",
+          "important": false,
+          "assignments": [
+            {
+              "staffId": "kazu",
+              "task": "参加者管理"
+            },
+            {
+              "staffId": "mimo",
+              "task": "参加者管理"
+            },
+            {
+              "staffId": "woody",
+              "task": "参加者管理"
+            },
+            {
+              "staffId": "tsune",
+              "task": "ハイエースで駅へ"
+            },
+            {
+              "staffId": "aochan",
+              "task": "参加者管理"
+            },
+            {
+              "staffId": "meichan",
+              "task": "ハイエースで駅へ"
+            },
+            {
+              "staffId": "katchan",
+              "task": "参加者管理"
+            }
+          ],
+          "note": "※コミュニティボードでオープンチャットはその場で入ってもらって下さい"
+        },
+        {
+          "id": "departure-20",
+          "time": null,
+          "content": "解散式・解散",
+          "important": true,
+          "assignments": [
+            {
+              "staffId": "mimo",
+              "task": "進行"
+            }
+          ],
+          "note": null
+        }
       ]
     }
   ]

@@ -73,6 +73,7 @@ export function HomeScreen() {
           <NavCard to="/wishlist" icon="✨" title="やりたいことリスト" subtitle="スタッフごとのやりたいこと" />
           <NavCard to="/equipment" icon="🎒" title="備品" subtitle="買い出し・備品確認・在庫" />
           <NavCard to="/memo" icon="📝" title="メモ" subtitle="端末内に保存" />
+          <NavCard to="/backup" icon="💾" title="バックアップ" subtitle="端末間でデータを共有・復元" />
         </div>
       </div>
     </AppShell>

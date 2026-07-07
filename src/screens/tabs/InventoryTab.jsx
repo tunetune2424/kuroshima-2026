@@ -4,6 +4,8 @@ import { useAsyncData } from '../../hooks/useAsyncData'
 import { useInventoryState } from '../../hooks/useInventoryState'
 import { getInventory } from '../../services/dataSource'
 
+const STATUS_OPTIONS = ['在庫あり', '要点検', '不足', '手配済み', '破損']
+
 export function InventoryTab() {
   const categories = useAsyncData(getInventory, [])
   const { overrides, setField } = useInventoryState()
@@ -17,6 +19,9 @@ export function InventoryTab() {
         <CollapsibleSection key={category.id} title={category.label} badge={`${category.items.length}件`}>
           {category.items.map((item) => {
             const current = { quantity: item.quantity, status: item.status, notes: item.notes, ...overrides[item.id] }
+            const statusChoices = STATUS_OPTIONS.includes(current.status)
+              ? STATUS_OPTIONS
+              : [current.status, ...STATUS_OPTIONS]
 
             return (
               <div key={item.id} className="rounded-xl bg-sand/60 p-3">
@@ -30,12 +35,17 @@ export function InventoryTab() {
                   />
                 </div>
                 <div className="mt-2 flex items-center gap-2">
-                  <input
-                    type="text"
+                  <select
                     value={current.status}
                     onChange={(event) => setField(item.id, 'status', event.target.value, item)}
-                    className="w-28 shrink-0 rounded-full border border-teal/30 bg-teal/5 px-2 py-1 text-xs text-teal"
-                  />
+                    className="shrink-0 rounded-full border border-teal/30 bg-teal/5 px-2 py-1 text-xs text-teal"
+                  >
+                    {statusChoices.map((choice) => (
+                      <option key={choice} value={choice}>
+                        {choice}
+                      </option>
+                    ))}
+                  </select>
                   <input
                     type="text"
                     value={current.notes}

@@ -6,6 +6,7 @@ import { WishlistScreen } from './screens/WishlistScreen'
 import { EquipmentScreen } from './screens/EquipmentScreen'
 import { MemoScreen } from './screens/MemoScreen'
 import { StaffRolesScreen } from './screens/StaffRolesScreen'
+import { BackupScreen } from './screens/BackupScreen'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/equipment" element={<EquipmentScreen />} />
         <Route path="/memo" element={<MemoScreen />} />
         <Route path="/staff" element={<StaffRolesScreen />} />
+        <Route path="/backup" element={<BackupScreen />} />
       </Routes>
     </HashRouter>
   )

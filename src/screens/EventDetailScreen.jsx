@@ -5,6 +5,7 @@ import { StaffBadge } from '../components/StaffBadge'
 import { EmptyState } from '../components/EmptyState'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { useMyStaff } from '../hooks/useMyStaff'
+import { useEventNotes } from '../hooks/useEventNotes'
 import { getTimetable, getStaff, getEventDetail } from '../services/dataSource'
 
 export function EventDetailScreen() {
@@ -13,6 +14,7 @@ export function EventDetailScreen() {
   const days = useAsyncData(getTimetable, [])
   const staff = useAsyncData(getStaff, [])
   const detail = useAsyncData(() => getEventDetail(eventId), [eventId])
+  const { notes: myNotes, setNote } = useEventNotes()
 
   const staffById = useMemo(() => new Map((staff ?? []).map((person) => [person.id, person])), [staff])
   const row = useMemo(() => {
@@ -81,6 +83,17 @@ export function EventDetailScreen() {
         ) : (
           <EmptyState message="このイベントの詳細情報はまだ登録されていません" />
         )}
+
+        <div className="rounded-2xl bg-white p-4 shadow-sm">
+          <h3 className="font-bold text-teal">自分のメモ</h3>
+          <textarea
+            value={myNotes[eventId] ?? ''}
+            onChange={(event) => setNote(eventId, event.target.value)}
+            placeholder="気づいたことを書いておく"
+            rows={4}
+            className="mt-2 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+          />
+        </div>
       </div>
     </AppShell>
   )
