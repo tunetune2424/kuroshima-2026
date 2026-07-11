@@ -6,7 +6,6 @@ import { WishlistScreen } from './screens/WishlistScreen'
 import { EquipmentScreen } from './screens/EquipmentScreen'
 import { MemoScreen } from './screens/MemoScreen'
 import { StaffRolesScreen } from './screens/StaffRolesScreen'
-import { BackupScreen } from './screens/BackupScreen'
 import { GuideScreen } from './screens/GuideScreen'
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/equipment" element={<EquipmentScreen />} />
         <Route path="/memo" element={<MemoScreen />} />
         <Route path="/staff" element={<StaffRolesScreen />} />
-        <Route path="/backup" element={<BackupScreen />} />
         <Route path="/guide" element={<GuideScreen />} />
       </Routes>
     </HashRouter>
