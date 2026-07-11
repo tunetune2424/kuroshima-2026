@@ -9,6 +9,7 @@ import equipmentCheckJson from '../data/equipmentCheck.json'
 import inventoryJson from '../data/inventory.json'
 import wishlistJson from '../data/wishlist.json'
 import eventDetailsJson from '../data/eventDetails.json'
+import guideJson from '../data/guide.json'
 
 export async function getTimetable() {
   return timetableJson.days
@@ -36,4 +37,8 @@ export async function getWishlist() {
 
 export async function getEventDetail(eventId) {
   return eventDetailsJson.details[eventId] ?? null
+}
+
+export async function getGuide() {
+  return guideJson.sections
 }

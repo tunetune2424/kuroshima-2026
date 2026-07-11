@@ -70,6 +70,7 @@ export function HomeScreen() {
 
         <div className="grid grid-cols-1 gap-3">
           <NavCard to="/timetable" icon="🗓" title="タイムテーブル" subtitle="1日目・2日目・解散日" />
+          <NavCard to="/guide" icon="🛟" title="安全・運営ガイド" subtitle="役割・緊急連絡・安全対応" />
           <NavCard to="/wishlist" icon="✨" title="やりたいことリスト" subtitle="スタッフごとのやりたいこと" />
           <NavCard to="/equipment" icon="🎒" title="備品" subtitle="買い出し・備品確認・在庫" />
           <NavCard to="/memo" icon="📝" title="メモ" subtitle="端末内に保存" />
