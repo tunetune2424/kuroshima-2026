@@ -89,7 +89,8 @@
         { "id": "eq-085", "name": "モリ", "quantity": "12", "notes": "班2本＋予備" },
         { "id": "eq-086", "name": "モリ用竿ケース", "quantity": "1", "notes": "" },
         { "id": "eq-087", "name": "スコップ", "quantity": "1", "notes": "燃えカス片付け用" },
-        { "id": "eq-088", "name": "寝袋", "quantity": "21", "notes": "暫定数" }
+        { "id": "eq-088", "name": "寝袋", "quantity": "21", "notes": "暫定数" },
+        { "id": "eq-089", "name": "ペグ打ち用ハンマー", "quantity": "テント数分", "notes": "" }
       ]
     },
     {
@@ -123,7 +124,8 @@
         { "id": "eq-108", "name": "はさみ", "quantity": "6", "notes": "" },
         { "id": "eq-109", "name": "トング", "quantity": "6", "notes": "班の数分" },
         { "id": "eq-110", "name": "火ばさみ", "quantity": "6", "notes": "" },
-        { "id": "eq-111", "name": "金網", "quantity": "6", "notes": "" }
+        { "id": "eq-111", "name": "金網", "quantity": "6", "notes": "" },
+        { "id": "eq-112", "name": "ペットボトルの蓋", "quantity": "班数分", "notes": "魚捌き講習のウロコ取り用" }
       ]
     },
     {
